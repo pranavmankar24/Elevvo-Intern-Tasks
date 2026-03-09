@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meridian — A Personal Blog</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Instrument+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ══════════ HEADER ══════════ -->
+  <header class="site-header">
+    <div class="container header-top-row">
+      <span class="header-date" id="headerDate"></span>
+      <a href="#" class="site-logo">Meridian</a>
+      <nav class="header-nav">
+        <a href="#">About</a>
+        <a href="#">Archive</a>
+        <a href="#">Subscribe</a>
+      </nav>
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-nav" id="mobileNav">
+      <a href="#">About</a>
+      <a href="#">Archive</a>
+      <a href="#">Subscribe</a>
+    </div>
+    <div class="container header-tagline-row">
+      <span class="header-rule-line"></span>
+      <span class="header-tagline">Personal dispatches on tech, travel &amp; the table</span>
+      <span class="header-rule-line"></span>
+    </div>
+  </header>
+
+
+  <!-- ══════════ FEATURED POST ══════════ -->
+  <section class="featured-section container" id="featuredSection">
+    <!-- Injected by JS -->
+  </section>
+
+
+  <!-- ══════════ FILTER BAR ══════════ -->
+  <div class="filter-wrap">
+    <div class="container filter-bar">
+      <span class="filter-label">Filter</span>
+      <div class="filter-pills" id="filterPills">
+        <button class="pill active" data-cat="All">All Posts</button>
+        <button class="pill" data-cat="Tech">Tech</button>
+        <button class="pill" data-cat="Travel">Travel</button>
+        <button class="pill" data-cat="Food">Food</button>
+        <button class="pill" data-cat="Life">Life</button>
+      </div>
+      <span class="results-count" id="resultsCount"></span>
+    </div>
+  </div>
+
+
+  <!-- ══════════ POSTS GRID ══════════ -->
+  <main class="container main-content">
+    <div class="posts-grid" id="postsGrid">
+      <!-- Injected by JS -->
+    </div>
+
+    <!-- PAGINATION -->
+    <div class="pagination" id="pagination">
+      <button class="pag-btn" id="prevBtn">← Previous</button>
+      <div class="pag-pages" id="pageNumbers"></div>
+      <button class="pag-btn" id="nextBtn">Next →</button>
+    </div>
+  </main>
+
+
+  <!-- ══════════ FOOTER ══════════ -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <p class="footer-logo">Meridian</p>
+        <p class="footer-desc">Written &amp; designed with care.<br/>No ads, no noise — just good reading.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#">Twitter / X</a>
+        <a href="#">RSS Feed</a>
+        <a href="#">Newsletter</a>
+        <a href="#">Privacy</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© 2025 Meridian. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
