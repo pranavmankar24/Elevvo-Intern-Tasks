@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fluxr — Ship faster, together</title>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- ══════════════════════════════
+     NAVIGATION
+══════════════════════════════ -->
+<nav>
+  <div class="nav-inner">
+    <a href="#" class="nav-logo">
+      <div class="logo-icon">
+        <svg viewBox="0 0 24 24"><polyline points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+      </div>
+      Fluxr
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="#features">Features</a></li>
+      <li><a href="#how">How it works</a></li>
+      <li><a href="#testimonials">Reviews</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+    </ul>
+
+    <div class="nav-cta">
+      <span class="nav-sign">Sign in</span>
+      <button class="nav-btn">Get started free</button>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile dropdown menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#features">Features</a>
+  <a href="#how">How it works</a>
+  <a href="#testimonials">Reviews</a>
+  <a href="#pricing">Pricing</a>
+  <a href="#" style="color:var(--teal); margin-top:8px;">Get started free →</a>
+</div>
+
+
+<!-- ══════════════════════════════
+     HERO
+══════════════════════════════ -->
+<section class="hero">
+  <div class="container">
+    <div class="tag hero-badge"><span class="tag-dot"></span> Now in public beta</div>
+    <h1 class="hero-title">Ship products<br/><span>10× faster.</span></h1>
+    <p class="hero-sub">
+      Fluxr is the all-in-one workspace for modern teams — plan, build, review,
+      and deploy without ever switching tabs.
+    </p>
+    <div class="hero-actions">
+      <button class="btn-primary">
+        Start for free
+        <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </button>
+      <button class="btn-ghost">Watch demo</button>
+    </div>
+    <p class="hero-note">No credit card required · <span>14-day free trial</span> · Cancel anytime</p>
+
+    <!-- Browser mockup -->
+    <div class="hero-mockup">
+      <div class="mockup-bar">
+        <div class="mockup-dots"><span></span><span></span><span></span></div>
+        <div class="mockup-url">app.fluxr.io / dashboard</div>
+      </div>
+      <div class="mockup-body">
+        <div class="mock-sidebar">
+          <div class="mock-item active"><span class="mock-dot"></span> Dashboard</div>
+          <div class="mock-item"><span class="mock-dot"></span> Projects</div>
+          <div class="mock-item"><span class="mock-dot"></span> Pipeline</div>
+          <div class="mock-item"><span class="mock-dot"></span> Analytics</div>
+          <div class="mock-item"><span class="mock-dot"></span> Team</div>
+        </div>
+        <div class="mock-main">
+          <div class="mock-row">
+            <div class="mock-card">
+              <div class="mock-card-label">Active Projects</div>
+              <div class="mock-card-val">24<span>+3</span></div>
+            </div>
+            <div class="mock-card">
+              <div class="mock-card-label">Deployments</div>
+              <div class="mock-card-val">138<span>↑12%</span></div>
+            </div>
+            <div class="mock-card">
+              <div class="mock-card-label">Team Members</div>
+              <div class="mock-card-val">9</div>
+            </div>
+          </div>
+          <div class="mock-row" style="flex:1">
+            <div class="mock-chart">
+              <div class="bar-wrap"><div class="bar"    style="height:35%"></div></div>
+              <div class="bar-wrap"><div class="bar md" style="height:55%"></div></div>
+              <div class="bar-wrap"><div class="bar"    style="height:40%"></div></div>
+              <div class="bar-wrap"><div class="bar hi" style="height:80%"></div></div>
+              <div class="bar-wrap"><div class="bar md" style="height:60%"></div></div>
+              <div class="bar-wrap"><div class="bar hi" style="height:95%"></div></div>
+              <div class="bar-wrap"><div class="bar"    style="height:50%"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════
+     LOGOS / SOCIAL PROOF
+══════════════════════════════ -->
+<div class="logos-strip">
+  <div class="container">
+    <p class="logos-label">Trusted by teams at</p>
+    <div class="logos-row">
+      <span class="logo-name">Stripe</span>
+      <span class="logo-name">Vercel</span>
+      <span class="logo-name">Notion</span>
+      <span class="logo-name">Linear</span>
+      <span class="logo-name">Figma</span>
+      <span class="logo-name">Loom</span>
+    </div>
+  </div>
+</div>
+
+
+<!-- ══════════════════════════════
+     FEATURES
+══════════════════════════════ -->
+<section class="features" id="features">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="tag"><span class="tag-dot"></span> Features</div>
+      <h2 class="section-title">Everything your team needs</h2>
+      <p class="section-sub">From planning to deployment — all in one place, with zero friction.</p>
+    </div>
+
+    <div class="features-grid">
+
+      <div class="feat-card reveal">
+        <div class="feat-icon">
+          <svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+        </div>
+        <div class="feat-title">Unified Workspace</div>
+        <div class="feat-desc">Bring your tasks, docs, and code reviews into a single, distraction-free workspace your whole team can navigate.</div>
+      </div>
+
+      <div class="feat-card reveal" style="transition-delay:0.07s">
+        <div class="feat-icon">
+          <svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        </div>
+        <div class="feat-title">Real-time Analytics</div>
+        <div class="feat-desc">Track velocity, deployment frequency, and team health with live dashboards that update the moment things change.</div>
+      </div>
+
+      <div class="feat-card reveal" style="transition-delay:0.14s">
+        <div class="feat-icon">
+          <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <div class="feat-title">Team Collaboration</div>
+        <div class="feat-desc">Inline comments, review flows, and @mentions keep everyone aligned — no more lost Slack threads or stale email chains.</div>
+      </div>
+
+      <div class="feat-card reveal">
+        <div class="feat-icon">
+          <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+        </div>
+        <div class="feat-title">One-click Deploys</div>
+        <div class="feat-desc">Connect your Git repo and push to production with a single click. Automatic rollbacks keep you safe if anything goes wrong.</div>
+      </div>
+
+      <div class="feat-card reveal" style="transition-delay:0.07s">
+        <div class="feat-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <div class="feat-title">Enterprise Security</div>
+        <div class="feat-desc">SOC 2 Type II, SSO, and fine-grained role permissions out of the box. Your data stays yours, always encrypted at rest.</div>
+      </div>
+
+      <div class="feat-card reveal" style="transition-delay:0.14s">
+        <div class="feat-icon">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+        </div>
+        <div class="feat-title">AI Automation</div>
+        <div class="feat-desc">Let Fluxr's AI auto-assign tasks, detect blockers, and suggest next steps so your team focuses on what matters most.</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════
+     HOW IT WORKS
+══════════════════════════════ -->
+<section class="how" id="how">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="tag"><span class="tag-dot"></span> How it works</div>
+      <h2 class="section-title">Up and running in minutes</h2>
+      <p class="section-sub">No lengthy onboarding. Three steps and your team is shipping.</p>
+    </div>
+
+    <div class="steps">
+      <div class="step reveal">
+        <div class="step-num">1</div>
+        <div class="step-title">Connect your stack</div>
+        <div class="step-desc">Link GitHub, Jira, Figma, or Slack in one click. Fluxr pulls in your existing work automatically.</div>
+      </div>
+      <div class="step reveal" style="transition-delay:0.1s">
+        <div class="step-num">2</div>
+        <div class="step-title">Invite your team</div>
+        <div class="step-desc">Add teammates by email. Set roles and permissions in seconds. Everyone's ready to collaborate right away.</div>
+      </div>
+      <div class="step reveal" style="transition-delay:0.2s">
+        <div class="step-num">3</div>
+        <div class="step-title">Ship with confidence</div>
+        <div class="step-desc">Review, approve, and deploy from one screen. Track every release with built-in changelogs and alerts.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════
+     TESTIMONIALS
+══════════════════════════════ -->
+<section class="testimonials" id="testimonials">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="tag"><span class="tag-dot"></span> Testimonials</div>
+      <h2 class="section-title">Loved by thousands of teams</h2>
+      <p class="section-sub">Don't take our word for it — hear from the people using Fluxr every day.</p>
+    </div>
+
+    <div class="testi-grid">
+
+      <div class="testi-card reveal">
+        <div class="stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
+        <p class="testi-text">"We cut our release cycle from two weeks to two days. Fluxr didn't just save us time — it changed how our whole team thinks about shipping."</p>
+        <div class="testi-author">
+          <div class="avatar" style="background: linear-gradient(135deg,#00d4aa,#00a07a)">S</div>
+          <div>
+            <div class="author-name">Sarah Chen</div>
+            <div class="author-role">CTO, Beam Analytics</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testi-card reveal" style="transition-delay:0.08s">
+        <div class="stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
+        <p class="testi-text">"The AI task routing alone is worth the subscription. Our PM stopped spending half her day triaging and can actually do product work now."</p>
+        <div class="testi-author">
+          <div class="avatar" style="background: linear-gradient(135deg,#3b7cff,#1a4fa0)">M</div>
+          <div>
+            <div class="author-name">Marcus Wade</div>
+            <div class="author-role">Head of Engineering, Loopify</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testi-card reveal" style="transition-delay:0.16s">
+        <div class="stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
+        <p class="testi-text">"We tried six tools before Fluxr. Nothing else came close to this level of polish and thoughtfulness. Our devs actually want to use it."</p>
+        <div class="testi-author">
+          <div class="avatar" style="background: linear-gradient(135deg,#f5b942,#c47e10)">P</div>
+          <div>
+            <div class="author-name">Priya Nair</div>
+            <div class="author-role">VP Product, Stackwise</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════
+     PRICING
+══════════════════════════════ -->
+<section class="pricing" id="pricing">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="tag"><span class="tag-dot"></span> Pricing</div>
+      <h2 class="section-title">Simple, honest pricing</h2>
+      <p class="section-sub">Start free. Scale as you grow. No surprise fees.</p>
+    </div>
+
+    <div class="pricing-grid">
+
+      <!-- Starter -->
+      <div class="price-card reveal">
+        <div class="plan-name">Starter</div>
+        <div class="plan-price"><span class="price-val">$0</span><span class="price-per">/mo</span></div>
+        <p class="plan-desc">Perfect for solo developers and small experiments.</p>
+        <div class="plan-divider"></div>
+        <div class="plan-features">
+          <div class="plan-feat"><svg viewBox="0 0 24 24" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Up to 3 projects</div>
+          <div class="plan-feat"><svg viewBox="0 0 24 24" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>1 team member</div>
+          <div class="plan-feat"><svg viewBox="0 0 24 24" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Basic analytics</div>
+          <div class="plan-feat off"><svg viewBox="0 0 24 24" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>AI automation</div>
+          <div class="plan-feat off"><svg viewBox="0 0 24 24" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Priority support</div>
+        </div>
+        <button class="plan-btn">Get started free</button>
+      </div>
+
+      <!-- Pro (Most Popular) -->
+      <div class="price-card popular reveal" style="transition-delay:0.08s">
+        <span class="popular-badge">Most Popular</span>
+        <div class="plan-name">Pro</div>
+        <div class="plan-price"><span class="price-val">$29</span><span class="price-per">/mo per seat</span></div>
+        <p class="plan-desc">For growing teams that need power and flexibility.</p>
+        <div class="plan-divider"></div>
+        <div class="plan-features">
+          <div class="plan-feat"><svg viewBox="0 0 24 24" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Unlimited projects</div>
+          <div class="plan-feat"><svg viewBox="0 0 24 24" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Up to 25 members</div>
+          <div class="plan-feat"><svg viewBox="0 0 24 24" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Advanced analytics</div>
+          <div class="plan-feat"><svg viewBox="0 0 24 24" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>AI automation</div>
+          <div class="plan-feat off"><svg viewBox="0 0 24 24" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>SSO / SAML</div>
+        </div>
+        <button class="plan-btn primary">Start 14-day trial</button>
+      </div>
+
+      <!-- Enterprise -->
+      <div class="price-card reveal" style="transition-delay:0.16s">
+        <div class="plan-name">Enterprise</div>
+        <div class="plan-price"><span class="price-val">Custom</span></div>
+        <p class="plan-desc">For large orgs with advanced security and compliance needs.</p>
+        <div class="plan-divider"></div>
+        <div class="plan-features">
+          <div class="plan-feat"><svg viewBox="0 0 24 24" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Everything in Pro</div>
+          <div class="plan-feat"><svg viewBox="0 0 24 24" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Unlimited members</div>
+          <div class="plan-feat"><svg viewBox="0 0 24 24" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>SSO / SAML / SCIM</div>
+          <div class="plan-feat"><svg viewBox="0 0 24 24" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Dedicated success mgr</div>
+          <div class="plan-feat"><svg viewBox="0 0 24 24" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>SLA + 24/7 support</div>
+        </div>
+        <button class="plan-btn">Talk to sales</button>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════
+     CALL TO ACTION
+══════════════════════════════ -->
+<section class="cta-section">
+  <div class="container">
+    <div class="cta-box reveal">
+      <h2 class="cta-title">Ready to <span>build faster?</span></h2>
+      <p class="cta-sub">Join over 12,000 teams already shipping with Fluxr. Start free, no card required.</p>
+      <div class="cta-actions">
+        <button class="btn-primary">
+          Get started free
+          <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </button>
+        <button class="btn-ghost">Talk to us</button>
+      </div>
+      <p class="cta-note">Free plan forever · Pro trial 14 days · No credit card needed</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════
+     FOOTER
+══════════════════════════════ -->
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <span class="footer-copy">© 2025 Fluxr, Inc. All rights reserved.</span>
+      <div class="footer-links">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Blog</a>
+        <a href="#">Status</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
