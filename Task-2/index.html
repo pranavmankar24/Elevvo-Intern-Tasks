@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,600;9..144,700&family=Epilogue:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link href="style.css" rel="stylesheet"/>
+  <link href="script.js" rel="javascript"/>
+</head>
+<body>
+
+<div class="page">
+
+  <!-- ══ LEFT ══ -->
+  <div class="panel-left">
+    <div>
+      <span class="tag">Get in touch</span>
+      <h1 class="panel-title">Let's start a<br/><em>conversation.</em></h1>
+      <p class="panel-desc">Have a project in mind or just want to say hello? Fill out the form and we'll reply within 24 hours.</p>
+      <div class="info-list">
+        <div class="info-item">
+          <div class="info-icon">
+            <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </div>
+          <div class="info-text"><strong>Email</strong>hello@studio.io</div>
+        </div>
+        <div class="info-item">
+          <div class="info-icon">
+            <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.07 1.18 2 2 0 012.06 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92v2z"/></svg>
+          </div>
+          <div class="info-text"><strong>Phone</strong>+91 012942393</div>
+        </div>
+        <div class="info-item">
+          <div class="info-icon">
+            <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div class="info-text"><strong>Location</strong>Mumbai, India</div>
+        </div>
+      </div>
+    </div>
+    <div class="dot-grid" id="dotGrid"></div>
+  </div>
+
+  <!-- ══ RIGHT (Form) ══ -->
+  <div class="panel-right">
+
+    <div id="formWrap">
+      <p class="form-heading">Send a message</p>
+      <p class="form-sub">Fields marked <span style="color:var(--accent-2)">*</span> are required.</p>
+
+      <form id="contactForm" novalidate>
+        <div class="form-row">
+
+          <!-- Full Name -->
+          <div class="field" id="f-name">
+            <label for="inp-name">Full Name <span class="req">*</span></label>
+            <div class="input-wrap">
+              <input type="text" id="inp-name" placeholder="Jane Smith" autocomplete="name"/>
+              <span class="field-status">
+                <svg class="icon-check" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                <svg class="icon-x" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+              </span>
+            </div>
+            <span class="field-msg">Please enter your full name.</span>
+          </div>
+
+          <!-- Email -->
+          <div class="field" id="f-email">
+            <label for="inp-email">Email Address <span class="req">*</span></label>
+            <div class="input-wrap">
+              <input type="email" id="inp-email" placeholder="jane@example.com" autocomplete="email"/>
+              <span class="field-status">
+                <svg class="icon-check" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                <svg class="icon-x" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+              </span>
+            </div>
+            <span class="field-msg">Enter a valid email address.</span>
+          </div>
+
+        </div>
+
+        <!-- Subject -->
+        <div class="field field-full" id="f-subject">
+          <label for="inp-subject">Subject <span class="req">*</span></label>
+          <div class="input-wrap">
+            <select id="inp-subject">
+              <option value="" disabled selected>Select a topic…</option>
+              <option value="general">General Inquiry</option>
+              <option value="project">Project Collaboration</option>
+              <option value="support">Support</option>
+              <option value="feedback">Feedback</option>
+              <option value="other">Other</option>
+            </select>
+            <span class="field-status">
+              <svg class="icon-check" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+              <svg class="icon-x" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+            </span>
+          </div>
+          <span class="field-msg">Please select a subject.</span>
+        </div>
+
+        <!-- Message -->
+        <div class="field field-full" id="f-message">
+          <label for="inp-message">Message <span class="req">*</span></label>
+          <div class="input-wrap">
+            <textarea id="inp-message" placeholder="Tell us what's on your mind…" maxlength="500"></textarea>
+          </div>
+          <div class="msg-footer">
+            <span class="field-msg" style="max-height:none; opacity:1; visibility:hidden;" id="msg-err">Min. 20 characters required.</span>
+            <span class="char-count" id="charCount">0 / 500</span>
+          </div>
+        </div>
+
+        <!-- Submit -->
+        <button type="submit" class="submit-btn" id="submitBtn">
+          <span id="btnText">Send Message</span>
+          <span class="btn-arrow"><svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+          <span class="spinner" id="spinner"></span>
+        </button>
+      </form>
+    </div>
+
+    <!-- Success -->
+    <div class="success-overlay" id="successOverlay">
+      <div class="success-ring">
+        <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+      </div>
+      <div class="success-title">Message sent!</div>
+      <p class="success-body">Thanks for reaching out. We'll review your message and reply within 24 hours.</p>
+      <button class="reset-btn" id="resetBtn">Send another message</button>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>
