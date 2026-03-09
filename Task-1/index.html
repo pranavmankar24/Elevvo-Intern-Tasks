@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sidebar</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Syne:wght@700;800&display=swap" rel="stylesheet"/>
+  <link href="styles.css" rel="stylesheet"/>
+</head>
+<body>
+
+<aside class="sidebar" id="sidebar">
+
+  <!-- Logo -->
+  <div class="logo-wrap">
+    <div class="logo-mark">N</div>
+    <span class="logo-text">Nucleus</span>
+  </div>
+
+  <!-- Nav -->
+  <nav>
+    <div class="nav-label">Workspace</div>
+
+    <a class="nav-item active" href="#">
+      <span class="nav-icon">
+        <svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+      </span>
+      <span class="nav-label-text">Dashboard</span>
+    </a>
+
+    <a class="nav-item" href="#">
+      <span class="nav-icon">
+        <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+      </span>
+      <span class="nav-label-text">Projects</span>
+      <span class="badge">4</span>
+    </a>
+
+    <a class="nav-item" href="#">
+      <span class="nav-icon">
+        <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+      </span>
+      <span class="nav-label-text">Messages</span>
+      <span class="badge">12</span>
+    </a>
+
+    <a class="nav-item" href="#">
+      <span class="nav-icon">
+        <svg viewBox="0 0 24 24"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+      </span>
+      <span class="nav-label-text">Analytics</span>
+    </a>
+
+    <div class="divider"></div>
+    <div class="nav-label">Account</div>
+
+    <a class="nav-item" href="#">
+      <span class="nav-icon">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+      </span>
+      <span class="nav-label-text">Profile</span>
+    </a>
+  </nav>
+
+  <!-- Toggle -->
+  <button class="toggle-btn" id="toggleBtn" aria-label="Toggle sidebar">
+    <svg class="toggle-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="15 18 9 12 15 6"/>
+    </svg>
+    <span class="toggle-text">Collapse</span>
+  </button>
+
+</aside>
+
+<main class="main">
+  <h1>Build with<br/><span>Nucleus.</span></h1>
+  <p>A minimal workspace sidebar with smooth open/close animation and clean iconography.</p>
+  <div class="hint">← <span>Click the button</span> to collapse the sidebar</div>
+</main>
+
+<script href="script.js"></script>
+</body>
+</html>
